@@ -2,7 +2,7 @@
     "name": "backbone-gmaps-api",
     "version": "0.0.0",
     "author": "Ashwin Hegde",
-    "description": "",
+    "description": "A Backbone.js plugin for interacting with the Google Maps API via Backbone's RESTful interface.",
     "contributors": [{
         "name": "Ashwin Hegde",
         "email": "ashwin.hegde3@gmail.com"
