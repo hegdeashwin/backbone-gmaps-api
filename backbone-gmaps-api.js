@@ -27,7 +27,12 @@
 			"lat": 18.562622,
 			"lng": 73.808723,
 			"zoom": 8,
-			"elref": "<div/>"
+			"elref": "<div/>",
+			"canDoubleClickZoom": true,
+			"canKeyboardOperate": true,
+			"canMouseScrollWheel": true,
+			"canZoomControl": true,
+			"isDraggable": true
 		},
 
 		initialize: function(options) {
@@ -41,7 +46,12 @@
 					lat: this.lat,
 					lng: this.lng
 				},
-				zoom: this.zoom
+				zoom: this.zoom,
+				zoomControl: this.canZoomControl,
+				disableDoubleClickZoom: this.canDoubleClickZoom,
+				keyboardShortcuts: this.canKeyboardOperate,
+				scrollwheel: this.canMouseScrollWheel,
+				draggable: this.isDraggable
 			};
 		},
 
