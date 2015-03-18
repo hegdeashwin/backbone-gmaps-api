@@ -1,0 +1,41 @@
+{
+    "name": "backbone-gmaps-api",
+    "version": "0.0.0",
+    "author": "Ashwin Hegde",
+    "description": "A Backbone.js plugin for interacting with the Google Maps API via Backbone's RESTful interface.",
+    "contributors": [{
+        "name": "Ashwin Hegde",
+        "email": "ashwin.hegde3@gmail.com"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hegdeashwin/backbone-gmaps-api"
+    },
+    "issues": {
+        "url": "https://github.com/hegdeashwin/backbone-gmaps-api/issues?state=open"
+    },
+    "milestones": {
+        "url": "https://github.com/hegdeashwin/backbone-gmaps-api/issues/milestones"
+    },
+    "releases": {
+        "url": "https://github.com/hegdeashwin/backbone-gmaps-api/releases"
+    },
+    "wiki": {
+        "url": "https://github.com/hegdeashwin/backbone-gmaps-api/wiki"
+    },
+    "keywords": [
+        "backboneplugin",
+        "backbone-google-plugin",
+        "backbone-google-maps-api",
+        "backbone-google-maps-plugin",
+        "google-maps",
+        "maps"
+    ],
+    "engines": {
+        "node": ">=0.10"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://raw.github.com/hegdeashwin/backbone-gmaps-api/master/LICENSE"
+    }]
+}
