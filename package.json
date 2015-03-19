@@ -24,6 +24,8 @@
         "url": "https://github.com/hegdeashwin/backbone-gmaps-api/wiki"
     },
     "keywords": [
+        "backbone",
+        "plugin",
         "backboneplugin",
         "backbone-google-plugin",
         "backbone-google-maps-api",
