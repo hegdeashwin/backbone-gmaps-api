@@ -32,7 +32,11 @@
 			"canKeyboardOperate": true,
 			"canMouseScrollWheel": true,
 			"canZoomControl": true,
-			"isDraggable": true
+			"isDraggable": true,
+			"canScaleControl": false,
+			"canRotateControl": false,
+			"canScrollwheel": true,
+			"canPanControl": false
 		},
 
 		initialize: function(options) {
@@ -51,7 +55,11 @@
 				disableDoubleClickZoom: this.canDoubleClickZoom,
 				keyboardShortcuts: this.canKeyboardOperate,
 				scrollwheel: this.canMouseScrollWheel,
-				draggable: this.isDraggable
+				draggable: this.isDraggable,
+				scaleControl: this.canScaleControl,
+				rotateControl: this.canRotateControl,
+				scrollwheel: this.canScrollwheel,
+				panControl: this.canPanControl
 			};
 		},
 
