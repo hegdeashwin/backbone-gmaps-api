@@ -6,15 +6,79 @@
         <title>Backbone-gmaps-api - Example</title>
 
         <style type="text/css">
-            html, body, #map-canvas {
+            html, body {
                 height: 100%;
+            }
+            html, body, .map-canvas, p, ul, li {
                 margin: 0;
                 padding: 0;
-            }            
+            }
+            .map-canvas {
+                width: 100%;
+                height: 50%;                
+            }
+            .summary-box {
+                margin: 10px;
+                position: relative;
+                font-family: arial;   
+            }
+            .summary-box .summary {
+                background: #F7F7F7;
+                float: left;
+                width: 40%;
+                position: absolute;                             
+            }
+            .summary-box .summary .title, .summary-box .codemirror .title  {
+                padding: 10px;
+                background: #555555;
+                color: #ffffff;
+            }
+            .summary-box .summary .content {
+                padding: 10px;
+            }
+            .summary-box .summary .content textarea {
+                width: 100%;
+                max-width: 100%;
+                height: 250px;
+                max-height: 250px;
+            }
+            .summary-box .codemirror {
+                width: 58%;
+                background: #F2F2F2;
+                float: right;
+            }
+            .summary-box .codemirror ul {
+                color: #555555;
+                list-style: none;
+            }
+            .summary-box .codemirror ul li {
+                padding: 10px;
+            }
         </style>
     </head>
     <body>
-        <div id="map-canvas"></div>
+        <div id="map-canvas" class="map-canvas"></div>
+
+        <div class="summary-box">
+            <div class="summary">
+                <p class="title">Example 1</p>
+                <p class="content">
+                    <textarea disabled>
+    var map = new $.fn.Gmaps.CreateMap({
+        elref: "map-canvas"
+    });
+    map.render();
+                </textarea>
+                </p>
+            </div>
+            <div class="codemirror">
+                <p class="title">Defaults</p>
+                <ul>
+                    <li>Latitude: 18.562622</li>
+                    <li>Longitude: 73.808723</li>
+                </ul>
+            </div>
+        </div>
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgst1r8snLGvvjTwE59nJZlRQOeJuDcSE"></script>
 
@@ -26,15 +90,7 @@
 
         <script type="text/javascript">
             var map = new $.fn.Gmaps.CreateMap({
-                elref: "map-canvas",
-                lat: 18.562622,
-                lng: 73.808723,
-                zoom: 12,
-                canDoubleClickZoom: false,
-                canKeyboardOperate: false,
-                canMouseScrollWheel: false,
-                zoomControl: false,
-                isDraggable: false
+                elref: "map-canvas"
             });
             map.render();
         </script>
